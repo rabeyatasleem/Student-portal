@@ -1,0 +1,372 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+   
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+    
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+  img{
+    position: fixed;
+    top: 14%; 
+    left: 63%;
+    object-fit: cover;
+    width: $circleSize;
+    height: $circleSize;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    z-index: 0;
+     
+  }
+
+.username-top {
+   position: fixed;
+    left: 81%;
+    top: 1%;
+    text-decoration:underline;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+.sign-out {
+   position: fixed;
+    left: 92%;
+    top: 1%;
+    text-decoration:underline;
+    color: #ffffff;
+    font-size: 16px;
+}
+ 
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+}
+
+.-label {
+    cursor: pointer;
+    height: $circleSize;
+    width: $circleSize;
+    position: fixed;
+    top: 43%;
+    left: 65%;
+  }
+  
+  &:hover {
+    .-label {
+      @include object-center;
+      background-color: rgba(128,128,128,128);
+      z-index: 10000;
+      color: $fontColor;
+      transition: background-color .2s ease-in-out;
+      border-radius: 10px;
+      margin-bottom: 0;
+    }
+  }
+  
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+    color: white;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+.show-submenu ~ .submenu {
+  display: block;
+}
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+/*.sidebar.close ~ .navbar,*/
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #4070f4;
+/*  cursor: pointer;*/
+}
+
+@mixin object-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$circleSize: 165px;
+$radius: 100px;
+$shadow: 0 0 10px 0 rgba(255,255,255,35);
+$fontColor: rgb(250,250,250);
+
+.profile-pic {
+  color: transparent;
+  transition: all .3s ease;
+  @include object-center;
+  position: absolute;
+  transition: all .3s ease;
+    
+}
+input  {
+/*    display: none;*/
+    position: fixed;
+    top: 49%;
+    left: 64%
+}
+  
+ 
+  
+  .span {
+    display: inline-flex;
+    padding: .2em;
+    height: 2em;
+  }
+
+
+/////////////////////////
+// Body styling 🐾
+/////////---------->
+/*
+
+body {
+  height: 100vh;
+  background-color: rgb(25, 24, 21);
+  @include object-center;
+  
+  a:hover {
+    text-decoration: none;
+  }
+}
+*/
+.main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 100;
+  background: #e7f2fd;
+}
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  text-align: center;
+}
+main .subjects > div {
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    position: absolute;
+    margin-left: 30px;
+}
+
+/*
+footer {
+    background-color:#11101d;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+*/
+/*
+
+footer p {
+    font-size: 12px;
+}
+*/
+
+/*
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+*/
+
+/*
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+*/
+
+/*
+    h1 {
+      margin: 0;
+    }
+*/
+
+main {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+        position: fixed;
+        top: 13%;
+        left: 20%;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+tbody tr td {
+    padding: 7px !important;
+    font-family: 'segoe ui' !important;
+    font-weight: 500 !important;
+    border-collapse: collapse;
+    border-color: silver;
+    top: 20%;
+}
+
+
+    h2 {
+      margin-top: 0;
+    }
+.nav_items {
+  display: flex;
+ height: 100%;
+  align-items: center;
+  justify-content: space-between;
+     position: fixed;
+    top: 8%;
+    left: 22%; 
+    
+}
+
+
+
+.nav_item {
+ column-gap: 19px;
+    margin-left: -200px;
+    color: #FFF;
+    word-spacing: 10px;
+    position: fixed;
+    left: 493px;
+    top: 75%;
+    
+}
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+       
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+

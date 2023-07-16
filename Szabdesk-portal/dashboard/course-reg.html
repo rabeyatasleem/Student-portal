@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Registration</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #4070f4;
+      margin: 0;
+      padding: 0;
+        overflow:hidden;
+    }
+      
+.nav_items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+     position: fixed;
+    top: -44%;
+    left: 33%; 
+     
+    
+}
+
+.nav_item {
+  column-gap: 19px;
+    margin-left: -200px;
+    color: #FFF;
+    word-spacing: 30px;
+    position: fixed;
+    left: 450px;
+    top: 3%;
+       
+    
+}
+
+a{
+    color: white;
+ text-decoration: none;
+    
+
+}
+      
+i {
+    padding: 20px;
+    position: fixed;
+    top: -1%;
+}
+
+.username-top {
+   position: fixed;
+    left: 80%;
+    top: 1%;
+    text-decoration:underline;
+}
+.sign-out {
+   position: fixed;
+    left: 90%;
+    top: 1%;
+    text-decoration:underline;
+}
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 50px;
+      box-shadow: 10px 5px 5px;
+      height: 500px;
+   
+   
+    }
+      
+     
+
+    h2 {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+       position: relative;
+        left: -3%;
+      border-radius: 20px;
+       
+    }
+      
+    .form-id input[type="text"],
+    .form-id select {
+      width: 105%;
+      padding: 10px;
+      border: 1px solid #ccc;
+       position: relative;
+        left: -3%;
+      border-radius: 20px;
+       
+    }
+      
+    .form-id {
+      margin-bottom: 20px;
+    }
+
+    .form-id label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="submit"] {
+      width: auto;
+      background-color: #4070f4;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      cursor: pointer;
+      border-radius: 15px;
+      position: fixed;
+      left: 46%;
+      top: 87%;    
+       
+    
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #00008B;
+    }
+      
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+    margin: 22px;
+
+      }
+      
+      .nav-bar{
+          height: 50px;
+          width: 100%;
+        background-color: black;
+      }
+  </style>
+</head>
+<body>
+    <div class="nav-bar">
+         <ul class="nav_items">
+          <div class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+            <a href="about" class="nav_link">About</a>
+            <a href="faculty" class="nav_link">Faculty</a>
+                <a href="#" class="nav_link">Contact</a>
+          </div>
+        </ul>
+    </div>
+        <a href="#" class="logo"><strong><i>ZABDESK</i></strong>
+    <a class="username-top" style="padding:1%;" href="../">
+   Rabeya Tasleem 
+  </a>
+     <a class="sign-out" style="padding:1%;" href="../">
+   Sign Out
+  </a>
+
+  <div class="container">
+    <h2>Course Registration</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label for="reg-no">Registration No:</label>
+        <input type="text" id="reg-no" name="reg-no" placeholder="Your Registration No">
+      </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your Email">
+      </div>
+        <div class="form-group">
+        <label for="phone-no">Phone No:</label>
+        <input type="text" id="phone-no" name="phone-no" placeholder="Your Phone no">
+      </div>
+      <div class="form-id">
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+          <option value="">Select a course</option>
+          <option value="course1">Android Developement</option>
+          <option value="course2">Operating Systems</option>
+          <option value="course3">Artificial Intelligence</option>
+            <option value="course1">User Interface</option>
+          <option value="course2">Computer Networking</option>
+          <option value="course3">Professional Practices</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+    </a>
+    </body>
+</html>

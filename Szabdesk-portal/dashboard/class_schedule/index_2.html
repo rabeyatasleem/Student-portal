@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZABDESK PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+     <div class="nav-bar">
+         <ul class="nav_items">
+          <div class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+            <a href="about" class="nav_link">About</a>
+            <a href="faculty" class="nav_link">Faculty</a>
+                <a href="#" class="nav_link">Contact</a>
+          </div>
+        </ul>
+    </div>
+        <a href="#" class="logo"><strong><i><b>ZABDESK</b></i></strong>
+    <a class="username-top" style="padding:1%;" href="../">
+   Owais Khalid 
+  </a>
+     <a class="sign-out" style="padding:1%;" href="../">
+   Sign Out
+  </a>
+
+    <section id="main-section">
+        
+                <div class="col-md-12">
+                    <div class="mainBox p-4">
+                        
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+
+                                <div class="table-responsive">
+
+                                    <table class="PageTitleHeaderColor_1 text-center" border="1" width="100%"
+                                        style="border:thick" align="center">
+                                        <tbody>
+                                            <tr>
+                                                <th align="center">Class Schedule</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />
+
+                                    <table class="table table-bordered studentDetailsBorder" border="1">
+                                        <!-- <thead>
+                                                <tr>
+                                                    <th scope="col" class="text-center" colspan="4">Class Schedule</th>
+                                                </tr>
+
+                                            </thead> -->
+                                        <tbody>
+                                            <tr>
+
+                                                </div>
+                                                <th><b>Student Name</b></th>
+                                                <td>Owais Khalid</td>
+
+                                                <th><b>Section</b></th>
+                                                <td>BSC/BS 6 G</td>
+
+                                                <th><b>Semester</b></th>
+                                                <td>Spring 2023</td>
+
+                                            </tr>
+
+
+
+
+                                    </table>
+
+                                    <table class=" table table-bordered PageTitleHeaderColor_2" border="1" width="100%"
+                                        style="border:thick">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <span class="pe-5"><b>Current CGPA:</b> 2.36 </span><span><b>
+                                                            Provisional Transcript CGPA:
+                                                        </b>
+                                                        3.2</span>
+                                                </th>
+                                            </tr>
+                                            <tr class="text-center">
+                                                <th align="center">Class Schedule</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center mb-5">
+                                                    <div class="dropdown">
+                                                        <a class="btn btn-secondary dropdown-toggle" href="#"
+                                                            role="button" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Dropdown link
+                                                        </a>
+
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item" href="#">BDK 1</a></li>
+                                                            <li><a class="dropdown-item" href="#">BDK 2</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">BDK 3</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr class="text-center">
+                                                <td>
+                                                    <button class="btn std-btn">Submit</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <h1 class="text-center text-black-50">404 Page Not Found</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- <script src="https://threejs.org/examples/js/libs/stats.min.js"></script> -->
+    <script>
+        AOS.init(
+            {
+                offset: 0,
+                duration: 800,
+                easing: 'ease-in-quad',
+                delay: 100,
+                once: true
+            }
+        );
+
+        $("#fileupload").click(function () {
+            $("#upload-file").click();
+        });
+
+
+    </script>
+
+    <script>
+        /* ---- particles.js config ---- */
+
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 250,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "grab"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 140,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+
+
+        /* ---- stats.js config ---- */
+
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+</body>
+
+</html>

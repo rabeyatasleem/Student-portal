@@ -1,0 +1,99 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 500px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  H1{
+    text-align: center;
+    color: #ffffff;
+    background-color: #4070f4;
+  }
+
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #4070f4;
+/*  cursor: pointer;*/
+}
+
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+    margin: 22px;
+color: white;
+      }
+      
+      .nav-bar{
+          height: 50px;
+          width: 150%;
+        background-color: black;
+          position: fixed;
+          top: 0%;
+          left: -5%;
+          color: white;
+      }
+
+i {
+    padding: 20px;
+    position: fixed;
+    top: -2%;
+    left: 4%;
+}
+
+.username-top {
+   position: fixed;
+    left: 80%;
+    top: 0%;
+    text-decoration:underline;
+    color: white;
+}
+.sign-out {
+   position: fixed;
+    left: 90%;
+    top: 0%;
+    text-decoration:underline;
+    color: white;
+}
+
+.nav_items {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+     position: fixed;
+    top: -44%;
+    left: 33%; 
+     
+    
+}
+
+.nav_item {
+  column-gap: 19px;
+    margin-left: -200px;
+    color: #FFF;
+    word-spacing: 30px;
+    position: fixed;
+    left: 450px;
+    top: 2%;   
+    
+}
+
+.nav_item a{
+    color: white;
+    text-decoration: none;
+}
